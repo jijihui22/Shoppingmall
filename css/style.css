@@ -1,10 +1,63 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css");
 
-body{
+body {
     display: contents;
 }
+
+/*----- popup ----*/
+.popup {
+    position: fixed;
+    top: 75px;
+    left: 80px;
+    z-index: 20;
+    margin: 0;
+    padding: 25px;
+    border: 3px solid #84A27C;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .9);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+}
+
+.popup h3 {
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.popup h4 {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+.popup p {
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.popup label {
+    margin-right: 5px;
+}
+
+.popup button {
+    float: right;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 13%;
+}
+
+.popup hr {
+    margin: 18px 0;
+    height: 2px;
+    background: #6F8459;
+    border: 0;
+}
+
+.popup hr:last-child {
+    margin: 17px 0 21px 0;
+}
+
 /*----- navbar ----*/
-.navbar{
+.navbar {
     padding-left: 1.5rem;
     position: fixed;
     top: 0px;
@@ -13,36 +66,42 @@ body{
     opacity: 0.9;
     z-index: 100;
 }
-.navbar-nav{
+
+.navbar-nav {
     position: absolute;
     left: 31%;
 }
-.nav-item{
+
+.nav-item {
     text-decoration: none;
     color: #4e4e4e;
     padding-right: 53px;
-    font-family:'Roboto', sans-serif;
-    font-weight:600;
-    font-size:15px;      
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
 }
-.nav-iconwarp{
+
+.nav-iconwarp {
     display: flex;
     align-items: center;
     position: absolute;
     right: 3.5%;
 }
-.nav-icon{
+
+.nav-icon {
     padding-left: 23px;
 }
-.nav-icon i:hover{
-    color:#84A27C;
+
+.nav-icon i:hover {
+    color: #84A27C;
 }
-i{
+
+i {
     color: #4e4e4e;
 }
 
 /*----- main-slider ----*/
-.slider-btn{
+.slider-btn {
     color: #4e4e4e;
     background-color: #F5FBEE;
     font-weight: 600;
@@ -51,29 +110,33 @@ i{
     font-size: 15px;
     position: relative;
     bottom: 28px;
-    padding: 11.4px 27px;  
+    padding: 11.4px 27px;
 }
-.slider-btn:hover{
+
+.slider-btn:hover {
     color: #6F8459;
     background-color: white;
     border-color: #6F8459;
 }
 
 /*----- card-line ----*/
-.card-line{
+.card-line {
     display: flex;
     justify-content: center;
-    padding:80px 0;
+    padding: 80px 0;
 }
-.card{
+
+.card {
     margin: 0 15px;
-    border:none;  
+    border: none;
     text-align: center;
 }
-.card-body{
+
+.card-body {
     padding-bottom: 1px;
 }
-.card-title{
+
+.card-title {
     font-size: 18px !important;
     font-weight: 600 !important;
     color: #000 !important;
@@ -81,51 +144,61 @@ i{
     text-decoration: none;
     cursor: pointer;
 }
-.list-group-item{
-    border:none;
+
+.list-group-item {
+    border: none;
     padding: 1px 0;
     margin-bottom: 3px;
     color: #757575;
     font-size: 12px;
 }
-.btn-first{
+
+.btn-first {
     font-size: 11px;
     padding: 1px 1px;
     font-weight: 600;
 }
-.card-body-two{
+
+.card-body-two {
     padding: 1px;
     margin: 6px;
 }
-.card-link{
+
+.card-link {
     text-decoration: none;
     color: #4e4e4e;
     font-size: 11px;
     font-weight: 300;
 }
-.price{
+
+.price {
     font-size: 16px;
     font-weight: bold;
 }
 
 /*----- video ----*/
-.youtube{
+.youtube {
     width: 100%;
     height: 100%;
 }
-.bn-img{   
-    width: 100%;  
+
+.bn-img {
+    width: 100%;
 }
-.bn-img-wrap{
+
+.bn-img-wrap {
     margin-bottom: 80px;
 }
-.videolind{
+
+.videolind {
     margin-bottom: 80px
 }
-.video{
+
+.video {
     position: relative;
 }
-.videowrap>h2{
+
+.videowrap>h2 {
     position: absolute;
     top: 39%;
     left: 50%;
@@ -134,7 +207,8 @@ i{
     font-weight: 600;
     font-size: 50px
 }
-.videowrap>h5{
+
+.videowrap>h5 {
     position: absolute;
     top: 51%;
     left: 50%;
@@ -142,7 +216,8 @@ i{
     color: white;
     font-weight: 600;
 }
-.videowrap>p{
+
+.videowrap>p {
     position: absolute;
     top: 55%;
     left: 50%;
@@ -150,7 +225,8 @@ i{
     color: white;
     font-weight: 600;
 }
-.videowrap>a{
+
+.videowrap>a {
     position: absolute;
     top: 64%;
     left: 50%;
@@ -162,7 +238,8 @@ i{
     padding: 6px 20px;
     text-decoration: none;
 }
-.videowrap>a:hover{
+
+.videowrap>a:hover {
     color: #4e4e4e;
     background-color: white;
     transition: background-color 0.5s, color 0.5s;
@@ -170,30 +247,33 @@ i{
 }
 
 /*----- wing -----*/
-.wing-btnwrap{
+.wing-btnwrap {
     position: absolute;
     width: 100%;
 }
-.wing-btn{
+
+.wing-btn {
     position: fixed;
     bottom: 20px;
     right: 40px;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     z-index: 100;
 }
-.wing-btn a{
+
+.wing-btn a {
     margin-bottom: 10px;
     opacity: 90%;
     border-radius: 50%
 }
-.wing-btn a:hover{
+
+.wing-btn a:hover {
     opacity: 100%;
-    box-shadow: 0 3px 3px 1px rgba(0,0,0,0.25);
+    box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.25);
 }
 
 /*---- swiper 1 ---- */
-.swiper{
+.swiper {
     width: 100%;
     padding-top: 20px;
     padding-bottom: 50px;
@@ -201,42 +281,48 @@ i{
     margin-bottom: 50px;
     font-family: 'Bitter', serif;
 }
-.swiper-slide{
+
+.swiper-slide {
     background-position: center;
     background-size: cover;
     width: 200px;
     height: 200px;
 }
-.swiper-slide img{
+
+.swiper-slide img {
     cursor: pointer;
     width: 100%;
     display: block;
 }
-.swiper>h3{
+
+.swiper>h3 {
     margin: 8px 0 23px 1.5rem;
     font-size: 24px;
     text-align: left;
 }
 
 /*---- swiper 2----*/
-.Kategorie-Text{
+.Kategorie-Text {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     padding: 0 1.5em;
 }
-.Kategorie-mainText{
+
+.Kategorie-mainText {
     font-family: 'Bitter', serif;
     font-size: 24px;
     font-weight: 400;
 }
-.Kategorie-moreText{
+
+.Kategorie-moreText {
     text-decoration: none;
     color: #212529;
     font-size: 14px;
     font-weight: 400;
 }
-.swiper-slide{
+
+.swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -255,59 +341,74 @@ i{
     -webkit-align-items: center;
     align-items: center;
 }
-.swiper-slide img{
+
+.swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.swiper-two{
+
+.swiper-two {
     background-color: #F0FDEC;
 }
-.promotion .swiper-button-prev::after, promotion .swiper-button-next::after {
+
+.promotion .swiper-button-prev::after,
+promotion .swiper-button-next::after {
     color: yellow
 }
+
 /*----- event ----*/
-.event{
+.event {
     padding-bottom: 155px;
 }
-.event-wrap{
+
+.event-wrap {
     display: flex;
 }
-.event-list{
+
+.event-list {
     width: calc(100% /3);
-    padding-right: 4px;   
+    padding-right: 4px;
 }
-.event-wrap div:last-child{
+
+.event-wrap div:last-child {
     padding-right: 0;
 }
+
 /*----- instagram ----*/
-.instagram{
-    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+.instagram {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     padding-bottom: 85px;
 }
-footer{
+
+footer {
     background: rgb(233, 231, 231);
-    color:rgb(128, 128, 128);
-    padding: 1.75em 1.5em 1.5em 4em;  
+    color: rgb(128, 128, 128);
+    padding: 1.75em 1.5em 1.5em 4em;
     font-size: 12px;
-    font-weight: 500; 
+    font-weight: 500;
 }
-.footer-secondline{
+
+.footer-secondline {
     display: flex;
     justify-content: space-between;
     padding-top: 1em;
     line-height: 20px;
 }
-.footer-secondline a{
-    color:rgb(128, 128, 128);
+
+.footer-secondline a {
+    color: rgb(128, 128, 128);
 }
-.call{
+
+.call {
     color: #4e4e4e;
     text-align: center;
-    padding-right:12% ;
+    padding-right: 12%;
 }
-.callNumber{
+
+.callNumber {
     font-size: 22px;
     font-weight: bold;
 }
