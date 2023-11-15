@@ -78,7 +78,7 @@ body{
   right: 3.5%;
 }
 .nav-iconwarp p{
-  display: none;
+  text-indent: -99999em;
 }
 .nav-icon{
   margin-left: 23px;
