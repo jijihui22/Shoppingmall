@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +16,6 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
   <!-- COOKIE POPUP -->
   <dialog class="popup clearfix">
@@ -29,7 +27,7 @@
     <p>기획, 구현 한지희 : 100%</p>
     <p>디자인 참조 : answer garden, about me 사이트</p>
     <hr>
-    <label for="day-check">오늘 하루 안보기</label>
+    <label for="day-check" aria-label="오늘 하루 안보기">오늘 하루 안보기</label>
     <input type="checkbox" id="day-check">
     <button type="button" id="close">close</button>
   </dialog>
@@ -37,7 +35,7 @@
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
       <a href="#">
-        <img src="https://answergarden.kr/web/upload/m113_unfold/main-logo.svg" alt="" width="134" height="46"
+        <img src="https://answergarden.kr/web/upload/m113_unfold/main-logo.svg" alt="answer garden logo" width="134" height="46"
           class="logo">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -76,9 +74,8 @@
       </div>
     </div>
   </nav>
-
   <main>
-    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <section id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active buttonarea"
           aria-current="true" aria-label="Slide 1"></button>
@@ -87,19 +84,19 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="6000">
-          <img src="./image/shop_slide1.png" alt="..." height="745">
+          <img src="https://ifh.cc/g/wpzp2n.jpg" alt="RENEWAL eve VEGAN 예민한 피부도 안심하는 순한 클렌징 #쌀뜨물세안 #비건클렌징 쌀 막걸리 클렌징폼" height="745">
           <div class="carousel-caption d-none d-md-block">
             <a href="#" class="slider-btn">자세히보기</a>
           </div>
         </div>
         <div class="carousel-item" data-bs-interval="6000">
-          <img src="./image/shop_slide2.png" class="d-block w-100" alt="..." height="745">
+          <img src="https://ifh.cc/g/DVHqTM.jpg" class="d-block w-100" alt="EVENT 속건조 해결사 쌀막걸리 라인 최대 50% 할인" height="745">
           <div class="carousel-caption d-none d-md-block">
             <a href="#" class="slider-btn">자세히보기</a>
           </div>
         </div>
         <div class="carousel-item" data-bs-interval="6000">
-          <img src="./image/shop_slide3.png" class="d-block w-100" alt="..." height="745">
+          <img src="https://ifh.cc/g/raJFLw.jpg" class="d-block w-100" alt="NEW 순하고 개운하게 딥클린! 갓벽 올라운더 쌀 막걸리 오일 출시" height="745">
           <div class="carousel-caption d-none d-md-block">
             <a href="#" class="slider-btn">자세히보기</a>
           </div>
@@ -113,110 +110,78 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-    </div>
-
-    <div>
-      <div class="card-line">
-        <div class="card" style="width: 18rem;">
-          <a href="#">
-            <img src="https://answergarden.kr/web/product/medium/202206/a08234aa9861aef175de13082bb3e615.jpg"
-              onmouseover="this.src='//answergarden.kr/web/product/tiny/202206/e426b8421771d345a9936fdd4f359178.jpg'"
-              onmouseout="this.src='//answergarden.kr/web/product/medium/202206/a08234aa9861aef175de13082bb3e615.jpg'"
-              alt="" width="288">
+    </section>
+    <section class="card-wrap">
+      <ul class="d-flex justify-content-center">
+        <li>
+          <a class="card-img" href="#">
+            <img src="https://answergarden.kr/web/product/tiny/202206/e426b8421771d345a9936fdd4f359178.jpg" alt="산들허브진정 앰플" width="288">
+            <img src="https://answergarden.kr/web/product/medium/202206/a08234aa9861aef175de13082bb3e615.jpg" alt="산들허브진정 앰플" width="288">
           </a>
-          <div class="card-body">
-            <h5 class="card-title container">산들허브진정 앰플</h5>
-            <p class="card-text">
-              <span>
-                <button type="button" class="btn btn-outline-secondary btn-first">임상완료</button>
-              </span>
-              <span>
-                <button type="button" class="btn btn-outline-success btn-first">저자극</button>
-              </span>
-              <span>
-                <button type="button" class="btn btn-outline-warning btn-first">기능성</button>
-              </span>
-              <span>
-                <button type="button" class="btn btn-outline-info btn-first">EWG</button>
-              </span>
-            </p>
+          <div>
+            <h5 class="card-title">산들허브진정 앰플</h5>
+            <h5>
+              <span class="btn btn-outline-secondary btn-first">임상완료</span>
+              <span class="btn btn-outline-success btn-first">저자극</span>
+              <span class="btn btn-outline-warning btn-first">기능성</span>
+              <span class="btn btn-outline-info btn-first">EWG</span>
+            </h5>
+            <p class="card-effect">[피부진정+피부결개선+2중기능성+저자극]</p>
+            <h5>결은 매끄럽게, 속은 촉촉하게 - 데일리 피부 컨디션 케어</h5>
+            <p class="card-review">★ 4.7 / 리뷰 56<i class="fas fa-heart"></i></p>
+            <p href="#" class="card-link">#진정크림 #피부결크림 #데일리크림</p>
+            <h6 class="card-point">￦21,800</h6>
+            <a href="#" class="card-detail">자세히보기</a>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">[피부진정+피부결개선+2중기능성+저자극]</li>
-            <li class="list-group-item">결은 매끄럽게, 속은 촉촉하게 - 데일리 피부 컨디션 케어</li>
-            <li class="list-group-item">★ 4.7 / 리뷰 56<i class="fas fa-heart"></i></li>
-          </ul>
-          <div class="card-body card-body-two">
-            <a href="#" class="card-link">#진정크림 #피부결크림 #데일리크림</a>
-            <div class="price">￦21,800</div>
-          </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-          <a href="#">
-            <img src="https://answergarden.kr/web/product/medium/202206/96ce56c54dbca35f019059543015878f.jpg"
-              onmouseover="this.src='//answergarden.kr/web/product/tiny/202206/17c6e7cbc878d35f744afda6c81e1229.jpg'"
-              onmouseout="this.src='//answergarden.kr/web/product/medium/202206/96ce56c54dbca35f019059543015878f.jpg'"
-              alt="..." width="288">
+        </li>
+        <li>
+          <a class="card-img" href="#">
+            <img src="https://answergarden.kr/web/product/tiny/202206/17c6e7cbc878d35f744afda6c81e1229.jpg" alt="산들허브 수분진정 크림" width="288">
+            <img src="https://answergarden.kr/web/product/medium/202206/96ce56c54dbca35f019059543015878f.jpg" alt="산들허브 수분진정 크림" width="288">
           </a>
-          <div class="card-body">
-            <h5 class="card-title container">산들허브 수분진정 크림</h5>
-            <p class="card-text">
-              <span>
-                <button type="button" class="btn btn-outline-secondary btn-first">임상완료</button>
-              </span>
-              <span>
-                <button type="button" class="btn btn-outline-success btn-first">저자극</button>
-              </span>
-            </p>
+          <div>
+            <h5 class="card-title">산들허브 수분진정 크림</h5>
+            <h5>
+              <span class="btn btn-outline-secondary btn-first">임상완료</span>
+              <span class="btn btn-outline-success btn-first">저자극</span>
+            </h5>
+            <p class="card-effect">[피부진정+24시간보습+저자극]</p>
+            <h5>아침엔 수분크림, 밤에는 수분팩 - 사계절 찰떡 수딩 케어</h5>
+            <p class="card-review">★ 4.8 / 리뷰 125<i class="fas fa-heart"></i></p>
+            <p href="#" class="card-link">#진정수분크림 #수딩케어</p>
+            <h6 class="card-point">￦27,500</h6>
+            <a href="#" class="card-detail">자세히보기</a>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">[피부진정+24시간보습+저자극]</li>
-            <li class="list-group-item">아침엔 수분크림, 밤에는 수분팩 - 사계절 찰떡 수딩 케어</li>
-            <li class="list-group-item">★ 4.8 / 리뷰 125<i class="fas fa-heart"></i></li>
-          </ul>
-          <div class="card-body card-body-two">
-            <a href="#" class="card-link">#진정수분크림 #수딩케어</a>
-            <div class="price">￦27,500</div>
-          </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-          <a href="#">
-            <img src="https://answergarden.kr/web/product/medium/202206/9341473e0f90721571b7799e8c159d53.jpg"
-              onmouseover="this.src='//answergarden.kr/web/product/tiny/202206/f9ecad71b089889d5ec07c42da1f71cb.jpg'"
-              onmouseout="this.src='//answergarden.kr/web/product/medium/202206/9341473e0f90721571b7799e8c159d53.jpg'"
-              alt="" width="288">
+        </li>
+        <li>
+          <a class="card-img" href="#">
+            <img src="https://answergarden.kr/web/product/tiny/202206/f9ecad71b089889d5ec07c42da1f71cb.jpg" alt="산들허브 수분진정 핸드 크림" width="288">
+            <img src="https://answergarden.kr/web/product/medium/202206/9341473e0f90721571b7799e8c159d53.jpg" alt="산들허브 수분진정 핸드 크림" width="288">
           </a>
-          <div class="card-body">
-            <h5 class="card-title container">산들허브 수분진정 핸드 크림</h5>
-            <p class="card-text">
-              <span>
-                <button type="button" class="btn btn-outline-secondary btn-first">임상완료</button>
-              </span>
-              <span>
-                <button type="button" class="btn btn-outline-success btn-first">저자극</button>
-              </span>
-            </p>
+          <div>
+            <h5 class="card-title">산들허브 수분진정 핸드 크림</h5>
+            <h5>
+              <span class="btn btn-outline-secondary btn-first">임상완료</span>
+              <span class="btn btn-outline-success btn-first">저자극</span>
+              <span class="btn btn-outline-warning btn-first">기능성</span>
+              <span class="btn btn-outline-info btn-first">EWG</span>
+            </h5>
+            <p class="card-effect">[피부저자극 테스트완료]</p>
+            <h5>번들거리는 불편함 없이 - 데일리 릴랙싱 핸드 케어</h5>
+            <p class="card-review">★ 4.8 / 리뷰 65<i class="fas fa-heart"></i></p>
+            <p href="#" class="card-link">#데일리핸드크림 #번들거리지 않는 크림</p>
+            <h6 class="card-point">￦9,000</h6>
+            <a href="#" class="card-detail">자세히보기</a>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">[피부저자극 테스트완료]</li>
-            <li class="list-group-item">번들거리는 불편함 없이 - 데일리 릴랙싱 핸드 케어</li>
-            <li class="list-group-item">★ 4.8 / 리뷰 65<i class="fas fa-heart"></i></li>
-          </ul>
-          <div class="card-body card-body-two">
-            <a href="#" class="card-link">#데일리핸드크림 #번들거리지 않는 크림</a>
-            <div class="price">￦9,000</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="bn-img-wrap">
+        </li>
+      </ul>
+    </section>
+    <section class="bn-img-wrap">
       <a href="#">
-        <img src="./image/bnimg.png" alt="" class="bn-img">
+        <img src="./image/bnimg.png" alt="#순면 100% 시트 #맞춤케어 #수분충전 에센셜 마스크 시트 4종 75% 할인" class="bn-img">
       </a>
-    </div>
-    <div class="videolind">
+    </section>
+    <section class="videolind">
       <div class="video">
         <iframe class="videoEvent" height="759" style="pointer-events: none;width: 100%"
           src="https://www.youtube.com/embed/NPvWY_mNMss?autoplay=1&mute=1&cc_load_policy=0&modestbranding=1&controls=0&loop=1&playlist=NPvWY_mNMss"
@@ -230,115 +195,110 @@
           <a href="#">영상 보러가기 <i class="fa-solid fa-chevron-right" style="color: #fff"></i></a>
         </div>
       </div>
-    </div>
+    </section>
     <!-- Swiper 1   -->
-    <div class="swiper mySwiper1 modalWrap swiper1">
+    <section class="swiper mySwiper1 modalWrap swiper1">
       <h3>@answer garden.youtube</h3>
       <div class="swiper-wrapper">
-
         <div class="swiper-slide">
-          <a href="https://www.youtube.com/embed/oFBEQzCcOjU" class="youtubes"><img src="./image/sns-imagefirst.png"
+          <a href="https://www.youtube.com/embed/oFBEQzCcOjU" class="youtubes"><img src="https://ifh.cc/g/TkTQr2.png.png"
               alt=""></a>
         </div>
         <div class="swiper-slide">
-          <a href="https://www.youtube.com/embed/oFBEQzCcOjU" class="youtubes"><img src="./image/sns-imagetwo.png"
+          <a href="https://www.youtube.com/embed/oFBEQzCcOjU" class="youtubes"><img src="https://ifh.cc/g/7WqT9g.png"
               alt=""></a>
         </div>
         <div class="swiper-slide">
-          <a href="https://www.youtube.com/embed/oFBEQzCcOjU" class="youtubes"><img src="./image/sns-imagethree.png"
+          <a href="https://www.youtube.com/embed/oFBEQzCcOjU" class="youtubes"><img src="https://ifh.cc/g/vwpOAS.png"
               alt=""></a>
         </div>
         <div class="swiper-slide">
-          <a href="https://www.youtube.com/embed/oFBEQzCcOjU" class="youtubes"><img src="./image/sns-imagefour.png"
+          <a href="https://www.youtube.com/embed/oFBEQzCcOjU" class="youtubes"><img src="https://ifh.cc/g/h4SbHK.png"
               alt=""></a>
         </div>
         <div class="swiper-slide">
-          <a href="https://www.youtube.com/embed/oFBEQzCcOjU" class="youtubes"><img src="./image/sns-imagefive.png"
+          <a href="https://www.youtube.com/embed/oFBEQzCcOjU" class="youtubes"><img src="https://ifh.cc/g/mBXVfv.png"
               alt=""></a>
         </div>
         <div class="swiper-slide">
-          <a href="https://www.youtube.com/embed/oFBEQzCcOjU" class="youtubes"><img src="./image/sns-imagesix.png"
+          <a href="https://www.youtube.com/embed/oFBEQzCcOjU" class="youtubes"><img src="https://ifh.cc/g/lBqjxf.png"
               alt=""></a>
         </div>
         <div class="swiper-slide">
-          <a href="https://www.youtube.com/embed/oFBEQzCcOjU" class="youtubes"><img src="./image/sns-imageseven.png"
+          <a href="https://www.youtube.com/embed/oFBEQzCcOjU" class="youtubes"><img src="https://ifh.cc/g/qtK3ys.png"
               alt=""></a>
         </div>
         <div class="swiper-slide">
-          <a href="https://www.youtube.com/embed/oFBEQzCcOjU" class="youtubes"><img src="./image/sns-imageeight.png"
+          <a href="https://www.youtube.com/embed/oFBEQzCcOjU" class="youtubes"><img src="https://ifh.cc/g/aWpXqf.png"
               alt=""></a>
         </div>
         <div class="swiper-slide">
-          <a href="https://www.youtube.com/embed/oFBEQzCcOjU" class="youtubes"><img src="./image/sns-imagenine.png"
+          <a href="https://www.youtube.com/embed/oFBEQzCcOjU" class="youtubes"><img src="https://ifh.cc/g/dKl5Ty.png"
               alt=""></a>
         </div>
       </div>
       <div class="swiper-pagination"></div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
-    </div>
-
+    </section>
     <!-- Swiper  2  -->
-    <div class="review">
+    <section class="review">
       <div class="Kategorie-Text">
         <p class="Kategorie-mainText">Review</p>
         <a href="#" class="Kategorie-moreText">더보기 <i class="fa-solid fa-angle-right"></i></a>
       </div>
       <div class="swiper mySwiper2 swiper-two">
         <div class="swiper-wrapper">
-          <div class="swiper-slide" style="width: 300px; height: 430px"><img src="./image/review-first.png" alt="">
+          <div class="swiper-slide" style="width: 300px; height: 430px"><img src="https://ifh.cc/g/mbNnD2.png" alt="review image">
           </div>
-          <div class="swiper-slide" style="width: 300px; height: 430px"><img src="./image/review-two.png" alt=""></div>
-          <div class="swiper-slide" style="width: 300px; height: 430px"><img src="./image/review-three.png" alt="">
+          <div class="swiper-slide" style="width: 300px; height: 430px"><img src="https://ifh.cc/g/ybXlX0.png" alt="review image"></div>
+          <div class="swiper-slide" style="width: 300px; height: 430px"><img src="https://ifh.cc/g/olwxGY.png" alt="review image">
           </div>
-          <div class="swiper-slide" style="width: 300px; height: 430px"><img src="./image/review-four.png" alt=""></div>
-          <div class="swiper-slide" style="width: 300px; height: 430px"><img src="./image/review-five.png" alt=""></div>
-          <div class="swiper-slide" style="width: 300px; height: 430px"><img src="./image/review-six.png" alt=""></div>
+          <div class="swiper-slide" style="width: 300px; height: 430px"><img src="https://ifh.cc/g/Rpo8wl.png" alt="review image"></div>
+          <div class="swiper-slide" style="width: 300px; height: 430px"><img src="https://ifh.cc/g/qtzAnY.png" alt="review image"></div>
+          <div class="swiper-slide" style="width: 300px; height: 430px"><img src="https://ifh.cc/g/A4VoQ0.jpg" alt="review image"></div>
         </div>
         <div class="swiper-pagination"></div>
       </div>
-    </div>
-
-    <div class="event">
+    </section>
+    <section class="event">
       <div class="Kategorie-Text">
         <p class="Kategorie-mainText">Event</p>
         <a href="#" class="Kategorie-moreText">전체보기 <i class="fa-solid fa-angle-right"></i></a>
       </div>
       <div class="event-wrap">
         <div class="event-list event-img">
-          <img src="image/event1.png" alt="카카오톡 이벤트" width="465">
+          <img src="https://ifh.cc/g/gGbt1s.jpg" alt="카카오톡 이벤트" width="465">
         </div>
         <div class="event-list event-img">
-          <img src="image/event2.png" alt="산들허브 구매시 핸드크림 증정 이벤트" width="465">
+          <img src="https://ifh.cc/g/4GdQXO.jpg" alt="산들허브 구매시 핸드크림 증정 이벤트" width="465">
         </div>
         <div class="event-list event-img">
-          <img src="image/event3.png" alt="리뷰 이벤트" width="465">
+          <img src="https://ifh.cc/g/4wZZqB.png" alt="리뷰 이벤트" width="465">
         </div>
         <div class="event-list event-img">
-          <img src="image/event4.png" alt="가을 맞이 상품 이벤트" width="465">
+          <img src="https://ifh.cc/g/a8JamY.jpg" alt="가을 맞이 상품 이벤트" width="465">
         </div>
       </div>
-    </div>
-
+    </section>
     <div class="wing">
       <ul class="wing-btnwrap">
         <li class="wing-btn">
           <a href="#">
             <img src="https://www.aboutmeshop.com/data/skin/front/kaimen_aboutme_pc/img/etc/mo_right_membene_icn.png"
-              alt="">
+              alt="회원혜택">
           </a>
           <a href="#">
-            <img src="https://www.aboutmeshop.com/data/skin/front/kaimen_aboutme_pc/img/etc/wing_kakao_icn.png" alt="">
+            <img src="https://www.aboutmeshop.com/data/skin/front/kaimen_aboutme_pc/img/etc/wing_kakao_icn.png" alt="answer garden kakaotalk">
           </a>
           <a href="#">
-            <img src="https://www.aboutmeshop.com/data/skin/front/kaimen_aboutme_pc/img/etc/wing_arr_btn.png" alt="">
+            <img src="https://www.aboutmeshop.com/data/skin/front/kaimen_aboutme_pc/img/etc/wing_arr_btn.png" alt="위로 가기">
           </a>
         </li>
       </ul>
     </div>
-
     <!-- LightWidget WIDGET -->
-    <div class="instagram">
+    <section class="instagram">
       <div class="Kategorie-Text">
         <p class="Kategorie-mainText">Instagram</p>
         <a href="#" class="Kategorie-moreText">더보기 <i class="fa-solid fa-angle-right"></i></a>
@@ -347,12 +307,12 @@
       <script src="https://snapwidget.com/js/snapwidget.js"></script>
       <iframe src="https://snapwidget.com/embed/1049375" class="snapwidget-widget" allowtransparency="true"
         frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:100%; "></iframe>
-    </div>
+    </section>
   </main>
   <footer>
     <div class="footerWrap">
       <div class="footer-firstline">
-        <img src="https://answergarden.kr/web/upload/m113_unfold/main-logo.svg" alt="" width="80" height="34"
+        <img src="https://answergarden.kr/web/upload/m113_unfold/main-logo.svg" alt="answer garden logo" width="80" height="34"
           class="logo">
       </div>
       <div class="footer-secondline">
@@ -394,5 +354,4 @@
   <script src="js/jquery-3.1.1.min.js"></script>
   <script src="js/script.js"></script>
 </body>
-
 </html>
