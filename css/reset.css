@@ -70,3 +70,11 @@ input:focus, button:focus{
   display: block;
   clear: both;
 }
+.yellow{
+  color: sienna;
+  border:1px solid sienna 
+}
+.blue{
+  color: teal;
+  border:1px solid teal 
+}
