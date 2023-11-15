@@ -74,7 +74,18 @@ input:focus, button:focus{
   color: sienna;
   border:1px solid sienna 
 }
+.yellow:hover{
+  background: sienna;
+  color: #fff;
+}
 .blue{
   color: teal;
   border:1px solid teal 
+}
+.blue:hover{
+  background: teal;
+  color: #fff;
+}
+.pb{
+  padding-bottom: 21px;
 }

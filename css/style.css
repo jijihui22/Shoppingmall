@@ -305,7 +305,7 @@ i{
 /*---- swiper 1 ---- */
 .swiper{
   width: 100%;
-  padding-top: 12px;
+  padding-top: 11px;
   padding-bottom: 50px;
   background-color: antiquewhite;
   margin-bottom: 110px;
@@ -323,7 +323,7 @@ i{
   display: block;
 }
 .swiper>h3{
-  margin: 8px 0 23px 1.5rem;
+  margin: 17px 0 23px 1.5rem;
   font-size: 24px;
   text-align: left;
 }
