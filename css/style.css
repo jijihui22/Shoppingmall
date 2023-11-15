@@ -77,9 +77,9 @@ body{
   position: absolute;
   right: 3.5%;
 }
-/* .nav-iconwarp p{
+.nav-iconwarp p{
   text-indent: -99999em;
-} */
+}
 .nav-icon{
   margin-left: 23px;
 }
@@ -92,7 +92,9 @@ body{
 i{
   color: #4e4e4e;
 }
-
+h1 p{
+  text-indent: -99999em;
+}
 /*----- main-slider ----*/
 .slider-btn{
   color: #4e4e4e;
