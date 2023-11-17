@@ -9,7 +9,7 @@ body{
   position: fixed;
   top: 75px;
   left: 80px;
-  z-index: 20;
+  z-index: 10;
   margin: 0;
   padding: 25px;
   border: 3px solid #84A27C;
@@ -50,32 +50,74 @@ body{
 }
 
 /*----- navbar ----*/
-.navbar{
-  padding-left: 1.5rem;
+header{
   position: fixed;
   top: 0px;
-  width: 100%;
-  background-color: white;
-  opacity: 0.9;
-  z-index: 100;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  background: rgba(255, 255, 255, .9);
+
 }
-.navbar-nav{
-  position: absolute;
-  left: 31%;
+h1{
+  text-indent: -99999em;
+  padding: 17px 0 17px 34px;
+}
+h1 a{
+  display: block;
+  width: 134px;
+  height: 46px;
+  background: url(https://answergarden.kr/web/upload/m113_unfold/main-logo.svg) no-repeat;
+}
+.nav{
+  position: relative;
+  z-index: 1;
 }
 .nav-item{
-  text-decoration: none;
+  width: 125px;
   color: #4e4e4e;
-  padding-right: 53px;
+  z-index: 1;
+  position: relative;
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
   font-size: 15px;
+  line-height: 80px;
+
 }
-.nav-iconwarp{
-  display: flex;
-  align-items: center;
+.nav-item>a{
+  text-decoration: none;
+  z-index:1; 
+  position: relative;
+  background:rgba(255, 255, 255, .9);
+  /* padding: 0 15px;  */
+  display: block;
+}
+.nav-item a:hover{
+  color: #84A27C;
+}
+.nav-item ul{
+  transform:translateY(-100%);
+  transition: .5s;
   position: absolute;
-  right: 3.5%;
+  background:rgba(255, 255, 255, .75);
+  font-weight: 600;
+  font-size: 14px;
+  top: 0;
+  line-height:40px;
+  z-index:-1;  
+  width: 121px;
+}
+.nav-item ul li{
+  padding: 1px 10px; 
+  white-space:nowrap;
+}
+.nav-item:hover ul{
+  transform:none;
+  top:100%;
+}
+
+.nav-iconwarp{
+ padding-right: 66px;
 }
 .nav-iconwarp p{
   text-indent: -99999em;
@@ -91,9 +133,6 @@ body{
 }
 i{
   color: #4e4e4e;
-}
-h1 p{
-  text-indent: -99999em;
 }
 /*----- main-slider ----*/
 .slider-btn{
@@ -237,6 +276,14 @@ h1 p{
 .video{
   position: relative;
 }
+.videowrap{
+  position: absolute;
+  background: rgba(0, 0, 0, .3);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
 .videowrap>h2{
   position: absolute;
   top: 39%;
@@ -271,7 +318,7 @@ h1 p{
   font-weight: 600;
   border: 1px solid white;
   background-color: none;
-  padding: 6px 20px;
+  padding: 11px 18px;
   text-decoration: none;
 }
 .videowrap>a:hover{
@@ -292,7 +339,7 @@ h1 p{
   right: 40px;
   display: flex;
   flex-direction: column;
-  z-index: 100;
+  z-index: 5;
 }
 .wing-btn a{
   margin-bottom: 10px;
@@ -404,6 +451,10 @@ h1 p{
 }
 .instagram p{
   padding-bottom: 20px;
+}
+.row>*{
+  padding-left: 0;
+  padding-right: 0;
 }
 footer{
   background: rgb(233, 231, 231);
