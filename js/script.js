@@ -35,6 +35,18 @@ closeBtn.addEventListener('click', () => {
   }
 });
 
+//탭을 눌렀을 때, skip_to_content에 포커스가 걸리면 화면에 나타난다
+let skip_to_content = document.querySelector('#skip_to_content');
+window.addEventListener('keydown', (e)=>{
+  console.log(e.code)
+  console.log(document.activeElement.id)
+  // if(e.code == tab){
+  //   if(document.activeElement.id == skip_to_content){
+  //     skip_to_content.style.transform = translateY(0);
+  //   }
+  // }
+})
+
 // <!-- Initialize Swiper  -->
 var swiper = new Swiper(".mySwiper1", {
   effect: "coverflow",
@@ -82,18 +94,6 @@ var swiper = new Swiper(".mySwiper2", {
   autoplay: {
     delay: 3000,
   },
-});
-
-$(document).ready(function () {
-  $(".modalWrap a").colorbox({
-    rel: "youtubes"
-  });
-  $(".youtubes").colorbox({
-    slideshowAuto: true,
-    iframe: true,
-    innerWidth: 1000,
-    innerHeight: 562.5,
-  });
 });
 
 var url = "http://www.ftc.go.kr/bizCommPop.do?wrkr_no=1328170229"

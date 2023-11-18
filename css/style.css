@@ -3,7 +3,17 @@
 body{
   display: contents;
 }
-
+.skip_to_content{
+  background: #000;
+  color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transform: translateY(-100%);
+  padding: 10px 20px;
+  text-decoration: none;
+  z-index: 21;
+}
 /*----- popup ----*/
 .popup{
   position: fixed;
@@ -56,7 +66,7 @@ header{
   left: 0;
   right: 0;
   z-index: 5;
-  background: rgba(255, 255, 255, .9);
+  background: #fff;
 }
 h1{
   text-indent: -99999em;
@@ -75,11 +85,11 @@ h1 a{
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
   font-size: 15px;
-  line-height: 80px;
+  line-height: 80px;  
+  background: #fff;
 }
 .nav-item>a{
   text-decoration: none;
-  background: rgba(255, 255, 255, .9);
   display: block;
 }
 .nav-item a:hover{
@@ -89,7 +99,7 @@ h1 a{
   transform: translateY(-100%);
   transition: .5s;
   position: absolute;
-  background: rgba(255, 255, 255, .75);
+  background: rgba(255, 255, 255, .9);
   font-weight: 600;
   font-size: 14px;
   top: 0;
@@ -146,7 +156,6 @@ h1 a{
   width: 2.75rem;
   height: 2.75rem;
 }
-
 /*----- card-line ----*/
 .card-wrap{
   padding: 110px 0;
