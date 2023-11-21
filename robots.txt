@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://project-hjh-shopping.netlify.app/sitemap.xml
