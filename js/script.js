@@ -35,18 +35,6 @@ closeBtn.addEventListener('click', () => {
   }
 });
 
-//탭을 눌렀을 때, skip_to_content에 포커스가 걸리면 화면에 나타난다
-let skip_to_content = document.querySelector('#skip_to_content');
-window.addEventListener('keydown', (e)=>{
-  console.log(e.code)
-  console.log(document.activeElement.id)
-  // if(e.code == tab){
-  //   if(document.activeElement.id == skip_to_content){
-  //     skip_to_content.style.transform = translateY(0);
-  //   }
-  // }
-})
-
 // <!-- Initialize Swiper  -->
 var swiper = new Swiper(".mySwiper1", {
   effect: "coverflow",
@@ -60,19 +48,24 @@ var swiper = new Swiper(".mySwiper1", {
     depth: 100,
     modifier: 1,
     slideShadows: true,
-    loop: true,
   },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.wrap-slide-box .swiper-button-next',
+    prevEl: '.wrap-slide-box.swiper-button-prev',
   },
   autoplay: {
     delay: 3000,
   },
+  a11y: { // 웹접근성 
+		enabled: true,
+		prevSlideMessage: '이전 슬라이드',
+		nextSlideMessage: '다음 슬라이드',   
+		slideLabelMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
+	},
 });
 
 //<!- Swiper  2  ->
@@ -82,18 +75,29 @@ var swiper = new Swiper(".mySwiper2", {
   spaceBetween: 30,
   slidesPerView: "auto",
   grabCursor: true,
-  loop: true,
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.wrap-slide-box .swiper-button-next',
+    prevEl: '.wrap-slide-box .swiper-button-prev',
   },
   autoplay: {
     delay: 3000,
   },
+  a11y: {
+    prevSlideMessage: '이전 슬라이드',
+    nextSlideMessage: '다음 슬라이드',
+    slideLabelMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
+},
 });
 
 var url = "http://www.ftc.go.kr/bizCommPop.do?wrkr_no=1328170229"

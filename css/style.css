@@ -13,6 +13,10 @@ body{
   padding: 10px 20px;
   text-decoration: none;
   z-index: 21;
+  transition: transform .3s
+}
+.skip_to_content:focus{
+  transform : none
 }
 /*----- popup ----*/
 .popup{
@@ -418,7 +422,7 @@ h1 a{
   object-fit: cover;
 }
 .swiper-two{
-  background-color: #F0FDEC;
+  background-color: #e6ffe1;
 }
 .promotion .swiper-button-prev::after,
 .promotion .swiper-button-next::after{
@@ -445,8 +449,10 @@ h1 a{
 
 /*----- instagram ----*/
 .instagram{
-  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  width: 100%;
   padding-bottom: 210px;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  overflow: hidden;
 }
 .instagram p{
   padding-bottom: 20px;
@@ -455,6 +461,8 @@ h1 a{
   padding-left: 0;
   padding-right: 0;
 }
+
+/*----- footer ----*/
 footer{
   background: rgb(233, 231, 231);
   color: rgb(80, 80, 80);
