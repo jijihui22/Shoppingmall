@@ -4,16 +4,16 @@ body{
   display: contents;
 }
 .skip_to_content{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 21;
+  padding: 10px 20px;
   background: #000;
   color: #fff;
-  position: fixed;
-  left: 0;
-  top: 0;
-  transform: translateY(-100%);
-  padding: 10px 20px;
   text-decoration: none;
-  z-index: 21;
-  transition: transform .3s
+  transform: translateY(-100%);
+  transition: transform .3s;
 }
 .skip_to_content:focus{
   transform : none
@@ -36,9 +36,9 @@ body{
   font-weight: 600;
 }
 .popup h4{
+  padding: 22px 0 3px;
   font-size: 17px;
   font-weight: 500;
-  padding: 22px 0 3px;
 }
 .popup p{
   font-weight: 500;
@@ -54,10 +54,10 @@ body{
   letter-spacing: 13%;
 }
 .popup hr{
-  margin: 18px 0;
   height: 2px;
-  background: #6F8459;
+  margin: 18px 0;
   border: 0;
+  background: #6F8459;
 }
 .popup hr:last-child{
   margin: 17px 0 21px 0;
@@ -67,14 +67,14 @@ body{
 header{
   position: fixed;
   top: 0px;
-  left: 0;
   right: 0;
+  left: 0;
   z-index: 5;
   background: #fff;
 }
 h1{
-  text-indent: -99999em;
   padding: 17px 0 17px 34px;
+  text-indent: -99999em;
 }
 h1 a{
   display: block;
@@ -83,14 +83,14 @@ h1 a{
   background: url(https://answergarden.kr/web/upload/m113_unfold/main-logo.svg) no-repeat;
 }
 .nav-item{
-  width: 125px;
-  color: #4e4e4e;
   position: relative;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 80px;  
+  width: 125px;
   background: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 80px;  
+  color: #4e4e4e;
 }
 .nav-item>a{
   text-decoration: none;
@@ -100,24 +100,24 @@ h1 a{
   color: #84A27C;
 }
 .nav-item ul{
-  transform: translateY(-100%);
-  transition: .5s;
   position: absolute;
-  background: rgba(255, 255, 255, .9);
-  font-weight: 600;
-  font-size: 14px;
   top: 0;
-  line-height: 40px;
   z-index: -1;  
   width: 121px;
+  background: rgba(255, 255, 255, .9);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 40px;
+  transform: translateY(-100%);
+  transition: .5s
 }
 .nav-item ul li{
   padding: 1px 10px; 
   white-space: nowrap;
 }
 .nav-item:hover ul{
-  transform: none;
   top: 100%;
+  transform: none;
 }
 .nav-iconwarp{
  padding-right: 66px;
@@ -140,20 +140,20 @@ h1 a{
 
 /*----- main-slider ----*/
 .slider-btn{
-  color: #4e4e4e;
-  background-color: #F5FBEE;
-  font-weight: 600;
-  text-decoration: none;
-  border: 1px solid #6F8459;
-  font-size: 15px;
   position: relative;
   bottom: 28px;
   padding: 11.4px 27px;
+  border: 1px solid #6F8459;
+  background-color: #F5FBEE;
+  font-size: 15px;
+  font-weight: 600;
+  color: #4e4e4e;
+  text-decoration: none;
 }
 .slider-btn:hover{
-  color: #6F8459;
-  background-color: white;
   border-color: #6F8459;
+  background-color: white;
+  color: #6F8459;
 }
 .carousel-control-prev span,
 .carousel-control-next span{
@@ -184,71 +184,71 @@ h1 a{
   text-align: center;
 }
 .card-title{
+  margin-bottom: 2px;
+  padding: 12px 0 7px 0;
   font-size: 18px;
   font-weight: 600;
   color: #000;
-  margin-bottom: 2px;
   text-decoration: none;
   cursor: pointer;
-  padding: 12px 0 7px 0;
 }
 .btn-first{
-  font-size: 11px;
   padding: 1px 1px;
+  font-size: 11px;
   font-weight: 600;
 }
 .card-wrap li h6{
   padding-bottom: 5px;
 }
 .card-wrap li p{
-  border: none;
-  line-height: 14px;
-  padding: 1px 0;
   margin-bottom: 3px;
-  color: #757575;
+  padding: 1px 0;
+  border: none;
   font-size: 12px;
+  color: #757575;
+  line-height: 14px;
 }
 .card-wrap .card-effect{
-  color: rgb(59, 86, 31);
-  font-size: 13px;
   padding: 4px 0 2.75px;
+  font-size: 13px;
+  color: rgb(59, 86, 31);
 }
 .card-wrap .card-review{
   font-size: 12px;
   line-height: 17px;
 }
 .card-link{
-  text-decoration: none;
-  color: #4e4e4e;
   font-size: 11px;
   font-weight: 300;
+  color: #4e4e4e;
+  text-decoration: none;
 }
 .card-point{
+  margin: 7.5px 0 8px;
   font-size: 16px;
   font-weight: bold;
-  margin: 7.5px 0 8px;
 }
 .card-detail{
   display: inline-block;
   width: 120px;
-  line-height: 35px;
-  color: #4e4e4e;
-  background-color: #F5FBEE;
-  font-weight: 600;
-  text-decoration: none;
   border: 1px solid #6F8459;
-  font-size: 14px;
   border-radius: 2px;
+  background-color: #F5FBEE;
+  font-size: 14px;
+  font-weight: 600;
+  color: #4e4e4e;
+  text-decoration: none;
+  line-height: 35px;
 }
 .card-detail:hover{
-  color: #6F8459;
-  background-color: white;
   border-color: #6F8459;
+  background-color: white;
+  color: #6F8459;
 }
 .card-line{
   display: flex;
-  justify-content: center;
   padding: 80px 0;
+  justify-content: center;
 }
 .card{
   margin: 0 15px;
@@ -281,52 +281,52 @@ h1 a{
 }
 .videowrap{
   position: absolute;
-  background: rgba(0, 0, 0, .3);
-  left: 0;
-  right: 0;
   top: 0;
+  right: 0;
   bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .3);
 }
 .videowrap>h2{
   position: absolute;
   top: 39%;
   left: 50%;
-  transform: translateX(-50%);
-  color: white;
-  font-weight: 600;
   font-size: 50px;
+  font-weight: 600;
+  color: white;
+  transform: translateX(-50%);
 }
 .videowrap>h5{
   position: absolute;
   top: 51%;
   left: 50%;
-  transform: translateX(-50%);
-  color: white;
   font-weight: 600;
+  color: white;
+  transform: translateX(-50%);
 }
 .videowrap>p{
   position: absolute;
   top: 55%;
   left: 50%;
-  transform: translateX(-50%);
-  color: white;
   font-weight: 600;
+  color: white;
+  transform: translateX(-50%);
 }
 .videowrap>a{
   position: absolute;
   top: 64%;
   left: 50%;
-  transform: translateX(-50%);
-  color: white;
-  font-weight: 600;
+  padding: 11px 18px;
   border: 1px solid white;
   background-color: none;
-  padding: 11px 18px;
+  font-weight: 600;
+  color: white;
   text-decoration: none;
+  transform: translateX(-50%);
 }
 .videowrap>a:hover{
-  color: #4e4e4e;
   background-color: white;
+  color: #4e4e4e;
   transition: 0.5s;
   transition-timing-function: ease-in-out;
 }
@@ -337,42 +337,42 @@ h1 a{
   width: 100%;
 }
 .wing-btn{
-  position: fixed;
-  bottom: 20px;
-  right: 40px;
   display: flex;
-  flex-direction: column;
+  position: fixed;
+  right: 40px;
+  bottom: 20px;
   z-index: 5;
+  flex-direction: column;
 }
 .wing-btn a{
   margin-bottom: 10px;
-  opacity: 90%;
   border-radius: 50%
+  opacity: 90%;
 }
 .wing-btn a:hover{
-  opacity: 100%;
   box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.25);
+  opacity: 100%;
 }
 
 /*---- swiper 1 ---- */
 .swiper{
   width: 100%;
+  margin-bottom: 110px;
   padding-top: 11px;
   padding-bottom: 50px;
   background-color: antiquewhite;
-  margin-bottom: 110px;
   font-family: 'Bitter', serif;
 }
 .swiper-slide{
-  background-position: center;
-  background-size: cover;
   width: 200px;
   height: 200px;
+  background-size: cover;
+  background-position: center;
 }
 .swiper-slide img{
-  cursor: pointer;
-  width: 100%;
   display: block;
+  width: 100%;
+  cursor: pointer;
 }
 .swiper>h3{
   margin: 17px 0 23px 1.5rem;
@@ -389,9 +389,9 @@ h1 a{
 }
 .Kategorie-Text{
   display: flex;
+  padding: 0 1.5em;
   justify-content: space-between;
   align-items: baseline;
-  padding: 0 1.5em;
 }
 .Kategorie-mainText{
   font-family: 'Bitter', serif;
@@ -399,31 +399,31 @@ h1 a{
   font-weight: 400;
 }
 .Kategorie-moreText{
-  text-decoration: none;
-  color: #212529;
-  font-size: 14px;
-  font-weight: 400;
   position: absolute;
   top: 10px;
   right: 15px;
+  color: #212529;
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
 }
 .swiper-slide{
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
+  display: flex;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  display: flex;
+  background: #fff;
+  font-size: 18px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
-  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
-  align-items: center;
 }
 .swiper-slide img{
   display: block;
@@ -434,8 +434,7 @@ h1 a{
 .swiper-two{
   background-color: #e6ffe1;
 }
-.promotion .swiper-button-prev::after,
-.promotion .swiper-button-next::after{
+.promotion .swiper-button-prev::after, .promotion .swiper-button-next::after{
   color: yellow
 }
 
@@ -470,31 +469,34 @@ h1 a{
   padding-bottom: 20px;
 }
 .row>*{
-  padding-left: 0;
   padding-right: 0;
+  padding-left: 0;
 }
 
 /*----- footer ----*/
 footer{
-  background: rgb(233, 231, 231);
-  color: rgb(80, 80, 80);
   padding: 1.75em 1.5em 1.5em 4em;
+  background: rgb(233, 231, 231);
   font-size: 12px;
   font-weight: 500;
+  color: rgb(80, 80, 80);
 }
 .footer-secondline{
   display: flex;
-  justify-content: space-between;
   padding-top: 1em;
   line-height: 20px;
+  justify-content: space-between;
 }
 .footer-secondline a{
   color: rgb(80, 80, 80);
 }
+.footer-secondline a:hover{
+  color: #4169e1;
+}
 .call{
+  padding-right: 12%;
   color: #4e4e4e;
   text-align: center;
-  padding-right: 12%;
 }
 .callNumber{
   font-size: 22px;
