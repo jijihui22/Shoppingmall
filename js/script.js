@@ -54,8 +54,8 @@ var swiper = new Swiper(".mySwiper1", {
     clickable: true,
   },
   navigation: {
-    nextEl: '.wrap-slide-box .swiper-button-next',
-    prevEl: '.wrap-slide-box.swiper-button-prev',
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
   autoplay: {
     delay: 3000,
@@ -87,8 +87,8 @@ var swiper = new Swiper(".mySwiper2", {
     clickable: true,
   },
   navigation: {
-    nextEl: '.wrap-slide-box .swiper-button-next',
-    prevEl: '.wrap-slide-box .swiper-button-prev',
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
   autoplay: {
     delay: 3000,

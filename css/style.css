@@ -76,11 +76,12 @@ h1{
   padding: 17px 0 17px 34px;
   text-indent: -99999em;
 }
-h1 a{
+h1 .logo{
   display: block;
   width: 134px;
   height: 46px;
   background: url(https://answergarden.kr/web/upload/m113_unfold/main-logo.svg) no-repeat;
+  z-index: 6;
 }
 .nav-item{
   position: relative;
@@ -109,7 +110,7 @@ h1 a{
   font-weight: 600;
   line-height: 40px;
   transform: translateY(-100%);
-  transition: .5s
+  transition: .5s;
 }
 .nav-item ul li{
   padding: 1px 10px; 
@@ -139,10 +140,17 @@ h1 a{
 }
 
 /*----- main-slider ----*/
-.slider-btn{
+.carousel-inner{
   position: relative;
-  bottom: 28px;
-  padding: 11.4px 27px;
+  top: 45px
+}
+.slider-btn{
+  position: absolute;
+  bottom: 5%;
+}
+.slider-btn a{
+  display: inline-block;
+  padding: 15px 27px;
   border: 1px solid #6F8459;
   background-color: #F5FBEE;
   font-size: 15px;
@@ -150,7 +158,7 @@ h1 a{
   color: #4e4e4e;
   text-decoration: none;
 }
-.slider-btn:hover{
+.slider-btn a:hover{
   border-color: #6F8459;
   background-color: white;
   color: #6F8459;
@@ -160,9 +168,17 @@ h1 a{
   width: 2.75rem;
   height: 2.75rem;
 }
+.carousel-item img{
+  max-width: 100%;
+  height: auto
+}
 /*----- card-line ----*/
 .card-wrap{
   padding: 110px 0;
+}
+.card-wrap ul{
+  display: flex;
+  justify-content: center;
 }
 .card-wrap li{
   position: relative;
@@ -273,6 +289,9 @@ h1 a{
 .bn-img-wrap{
   margin-bottom: 110px;
 }
+.bn-img-wrap img:first-child{
+  display: none;
+}
 .videolind{
   margin-bottom: 110px
 }
@@ -346,7 +365,7 @@ h1 a{
 }
 .wing-btn a{
   margin-bottom: 10px;
-  border-radius: 50%
+  border-radius: 50%;
   opacity: 90%;
 }
 .wing-btn a:hover{
@@ -442,6 +461,7 @@ h1 a{
 .event{
   position: relative;
   padding-bottom: 140px;
+  overflow: hidden;
 }
 .event p{
   padding-bottom: 20px;
@@ -449,9 +469,9 @@ h1 a{
 .event-wrap{
   display: flex;
 }
-.event-list{
-  width: calc(100% /3);
-  padding-right: 4px;
+.event-list img{
+  width: calc(100vw /6);
+  padding-right: 5px;
 }
 .event-wrap div:last-child{
   padding-right: 0;
@@ -475,7 +495,8 @@ h1 a{
 
 /*----- footer ----*/
 footer{
-  padding: 1.75em 1.5em 1.5em 4em;
+  position: relative;
+  padding: 1.75em 1.5em 1.75em 4em;
   background: rgb(233, 231, 231);
   font-size: 12px;
   font-weight: 500;
@@ -494,11 +515,100 @@ footer{
   color: #4169e1;
 }
 .call{
-  padding-right: 12%;
+  position: absolute;
+  top: 25%;
+  right: 12%;
   color: #4e4e4e;
   text-align: center;
+}
+.call ul li{
+  line-height: 22px;
 }
 .callNumber{
   font-size: 22px;
   font-weight: bold;
+  padding-bottom: 6px;
+}
+
+@media screen and (max-width:1320px){
+  .nav-item{
+    width: 117px;
+  }
+  header li:last-child{
+    width: 75px;
+  }
+  .nav-iconwarp{
+    padding-right: 10px;
+  }
+}
+@media screen and (max-width:1140px){
+  .nav-item{
+    width: 110px;
+  }
+  header li:last-child{
+    width: 65px;
+  }
+}
+@media screen and (max-width:960px){
+  header{
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  header h1{
+    padding: 30px 100% 41px 100%;
+    background: #ffffff;
+  }
+  header li{
+    width: 25%;
+  }
+  header .nav-iconwarp{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    padding-right: 0;
+  }
+  .nav-item{
+    line-height: 55px
+  }
+  .card-wrap ul{
+    flex-wrap: wrap;
+    row-gap: 47px;
+  }
+  .bn-img-wrap img:first-child{
+    display: block;
+  }
+  .bn-img-wrap img:last-child{
+    display: none;
+  }
+  .review div:first-child{
+    padding-bottom: 11px;
+  }
+  .event-wrap{
+    flex-wrap: wrap;
+  }
+  .event-list img{
+    width: calc(100vw /3.1);
+  }
+  .footer-secondline{
+    flex-direction: column-reverse;
+    justify-content: start;
+    row-gap: 15px;
+  }
+  .call{
+    position: static;
+  }
+  .call ul{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .callNumber{
+    font-size: 15px;
+    padding-bottom: 0;
+    padding-right: 7px;
+  }
+}
+@media screen and (max-width:576px){
+  
 }
