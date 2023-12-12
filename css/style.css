@@ -76,7 +76,7 @@ h1{
   padding: 17px 0 17px 34px;
   text-indent: -99999em;
 }
-h1 .logo{
+h1 a{
   display: block;
   width: 134px;
   height: 46px;
@@ -138,11 +138,13 @@ h1 .logo{
 .nav-icon i:hover{
   color: #84A27C;
 }
+.menu-section{
+  display: none;
+}
 
 /*----- main-slider ----*/
 .carousel-inner{
   position: relative;
-  top: 45px
 }
 .slider-btn{
   position: absolute;
@@ -171,6 +173,9 @@ h1 .logo{
 .carousel-item img{
   max-width: 100%;
   height: auto
+}
+.carousel-item img:first-child{
+  display: none;
 }
 /*----- card-line ----*/
 .card-wrap{
@@ -550,6 +555,9 @@ footer{
   }
 }
 @media screen and (max-width:960px){
+  dialog{
+    display: none;
+  }
   header{
     flex-direction: column;
     align-items: center;
@@ -608,7 +616,120 @@ footer{
     padding-bottom: 0;
     padding-right: 7px;
   }
+  .m-header h1{
+    display: none;
+  }
 }
 @media screen and (max-width:576px){
-  
+  header h1, header > ul li{
+    display: none;
+  }
+  .menu-section{
+    display: block;
+  }
+  .m-header h1{
+    display: block;
+  } 
+  h1{
+    padding: 0;
+  }
+  .m-header{
+    position: relative;
+    padding: 20px 0 10px 20px;
+  }
+  .m-header a:focus{
+    background: #fff;
+    color: #000
+  }
+  .m-header a:hover {
+    color: #6F8459;
+  }
+  .m-header .menu{
+    position: relative;
+    transition: .3s ease-in-out;
+    width: 26px;
+    height: 26px;
+    z-index: 100;
+    margin-right: 20px;  
+    display: block;
+  }
+  .m-header .menu span{
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    border-radius: 4px;
+    background: #444;
+    transition:0.3s;
+  }
+  .menu span:nth-child(1){
+    top: 0;
+  }
+  .menu span:nth-child(2),
+  .menu span:nth-child(3){
+    top: 8px;
+  }
+  .menu span:nth-child(4){
+    top: 16px;
+  }
+  .menu.active span:nth-child(1),
+  .menu.active span:nth-child(4){
+    opacity: 0;
+  }
+  .menu.active span:nth-child(2){
+    transform:rotate(45deg);
+  }
+  .menu.active span:nth-child(3){
+    transform:rotate(-45deg);
+  }
+  .menu-section{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    bottom: 0;
+    right: 0;
+    background: #f8f2eb;
+    transition: .4s;
+    z-index: 50;
+    width: 100%;
+    height: 765px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, .3);
+  }
+  .menu-section > div{
+    margin: 80px 50px;
+  }
+  .menu-section .nav-iconwarp{
+    margin: 11px 7px 16px 0;
+  }
+  .menu-list > li{
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 42px;
+  }
+  .menu-list > li > a{
+    color: #6F8459
+  }
+  .menu-list li > ul > li{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 34px;
+    text-indent: 6px;
+  }
+  .menu-section.open{
+    left: 0;
+  }
+  .carousel-inner{
+    top: 0;
+  }
+  .carousel-item > img:nth-child(2){
+    display: none;
+  }
+  .carousel-item > img:first-child{
+    display: block;
+  }
+  .event-list img{
+    width: calc(100vw /2);
+  }
+  .instagram{
+    display: none;
+  }
 }

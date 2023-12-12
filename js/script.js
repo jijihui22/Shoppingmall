@@ -35,6 +35,13 @@ closeBtn.addEventListener('click', () => {
   }
 });
 
+//mobile menu
+$('.m-header .menu').click((e)=>{
+  e.preventDefault();
+  $('.m-header .menu-section').toggleClass('open');
+  $('.m-header .menu').toggleClass('active');
+});
+
 // <!-- Initialize Swiper  -->
 var swiper = new Swiper(".mySwiper1", {
   effect: "coverflow",
@@ -100,9 +107,9 @@ var swiper = new Swiper(".mySwiper2", {
 },
 });
 
-var url = "http://www.ftc.go.kr/bizCommPop.do?wrkr_no=1328170229"
-$(document).ready(function () {
-  $('.ftc_btn').click(function () {
+let url = "http://www.ftc.go.kr/bizCommPop.do?wrkr_no=1328170229"
+$(document).ready(()=>{
+  $('.ftc_btn').click(()=>{
     window.open(url, "bizCommPop", "width=750, height=700;"); return false;
   });
 });
